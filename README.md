@@ -24,6 +24,7 @@ The engagement involves verifying file hashes, correlating with known frameworks
 Who shared the malware samples?
 
 -Look at who sent the email-
+
 Inside the DocIntel ticket metadata, the “Reporter” field lists SwiftSpend Finance as the originator. 
 This establishes the context of a client submission rather than an internal detection — important for triage priority and chain-of-custody.
 
@@ -49,6 +50,7 @@ The VirusTotal behavior tab showed references to microphone and network activity
 Which MITRE ATT&CK technique is linked to pRsm.dll in MgBot?
 
 -USE MITRE ATT@CK-
+
 VirusTotal’s automated mapping initially suggested T1574 (Side-Loading) and T1129 (Shared Modules) these describe how the DLL is loaded. 
 However, manual research into MgBot’s MITRE profile showed that pRsm.dll functions as an audio recorder.
 This distinction demonstrates critical analysis beyond automation.
