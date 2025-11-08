@@ -84,6 +84,7 @@ A sign of actor resource reuse or cross-platform campaign design.
 
 # Reflection
 This challenge simulated the pace and structure of real-world CTI analysis:
+
 -Collecting and validating hashes
 -Performing cross-platform pivoting (VirusTotal → DocIntel → MITRE)
 -Interpreting automation critically instead of blindly accepting it
