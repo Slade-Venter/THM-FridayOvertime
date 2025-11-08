@@ -4,10 +4,11 @@ Malware analysis and threat-intelligence CTF from TryHackMe’s “Friday Overti
 
 # TryHackMe – Friday Overtime
 Author: Slade Venter
+
 Category: Malware Analysis / Threat Intelligence
 
 # Scenario
--It’s late Friday at PandaProbe Intelligence when SwiftSpend Finance opens a high-priority ticket reporting suspicious DLL files.
+It’s late Friday at PandaProbe Intelligence when SwiftSpend Finance opens a high-priority ticket reporting suspicious DLL files.
 As the only analyst still on shift, you must download the attachments, examine them in a controlled environment, and determine whether they indicate a targeted intrusion or a false alarm.
 The engagement involves verifying file hashes, correlating with known frameworks, identifying ATT&CK mappings, and confirming the scope of potential compromise.
 
@@ -26,7 +27,7 @@ Who shared the malware samples?
 -Look at who sent the email-
 
 Inside the DocIntel ticket metadata, the “Reporter” field lists SwiftSpend Finance as the originator. 
-This establishes the context of a client submission rather than an internal detection — important for triage priority and chain-of-custody.
+This establishes the context of a client submission rather than an internal detection. Important for triage priority and chain-of-custody.
 
 # Question 2
 SHA1 hash of pRsm.dll
@@ -66,7 +67,8 @@ The domain masquerades as a legitimate Tencent update service, a common MgBot ta
 
 <img width="1920" height="851" alt="Defanged" src="https://github.com/user-attachments/assets/8b6d5690-cf74-4433-9d75-352f8c9d6d82" />
 
-#Question 6
+
+# Question 6
 CyberChef defanged C2 IP (first detected 2020-09-14)
 
 This C2 address appeared in DocIntel’s IOC timeline and was confirmed via VirusTotal and AbuseIPDB as historically linked to multiple MgBot campaigns.
@@ -86,8 +88,11 @@ A sign of actor resource reuse or cross-platform campaign design.
 This challenge simulated the pace and structure of real-world CTI analysis:
 
 -Collecting and validating hashes
+
 -Performing cross-platform pivoting (VirusTotal → DocIntel → MITRE)
+
 -Interpreting automation critically instead of blindly accepting it
 
 As my first malware-analysis CTF, this is for practise and to begin building a profile, it reinforced structured investigation, evidence documentation, and clear reporting
-              “Curiosity, not tools, makes the analyst.”
+
+> “Curiosity, not tools, makes the analyst.”
